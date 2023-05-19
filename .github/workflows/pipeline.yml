@@ -9,13 +9,14 @@ on:
   pull_request:
     branches: [ '**', '!ga-ignore-**' ]
 
+defaults:
+  run:
+    working-directory: ./app
+
 jobs:
   install:
     name: install
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./app
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-node@v3
