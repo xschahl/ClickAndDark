@@ -23,6 +23,7 @@ http://localhost:80
 
 Install depedencies:
 ```
+cd ./app
 npm intall
 ```
 
@@ -33,3 +34,5 @@ ng serve
 
 Access to angular application:
 http://localhost:4200
+
+## Database (Node TS)
