@@ -39,7 +39,7 @@ http://localhost:4200
 
 Install depedencies:
 ```
-cd ./app
+cd ./database
 npm install
 ```
 
