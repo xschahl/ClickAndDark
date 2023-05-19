@@ -2,3 +2,34 @@
 
 ## Github Actions
 [![pipeline](https://github.com/xschahl/Epitech-JAM-19-05-23/actions/workflows/pipeline.yml/badge.svg?branch=main)](https://github.com/xschahl/Epitech-JAM-19-05-23/actions/workflows/pipeline.yml)
+
+## Docker Angular
+
+Build docker image:
+```
+cd ./app
+docker build . -t my-app
+```
+
+Run docker container:
+```
+sudo docker run -d -p 80:80 my-app
+```
+
+Access to angular application:
+http://localhost:80
+
+## Angular
+
+Install depedencies:
+```
+npm intall
+```
+
+Launch application:
+```
+ng serve
+```
+
+Access to angular application:
+http://localhost:4200
