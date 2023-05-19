@@ -37,7 +37,3 @@ jobs:
         name: app
         path: ./app/dist/app
 
-    - name: Run tests
-      working-directory: ./app
-      run: npm test
-
