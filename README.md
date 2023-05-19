@@ -36,3 +36,8 @@ Access to angular application:
 http://localhost:4200
 
 ## Database (Node TS)
+
+Launch database
+```
+npm start
+```
