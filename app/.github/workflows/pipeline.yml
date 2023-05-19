@@ -14,13 +14,14 @@ jobs:
     name: install
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - run: cd app
-    - uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm ci
+      - working-directory: ./app
+      - uses: actions/checkout@v3
+      - run: cd app
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - run: npm ci
 
   build:
     name: build
