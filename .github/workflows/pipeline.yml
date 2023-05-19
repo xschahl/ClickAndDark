@@ -31,13 +31,13 @@ jobs:
       working-directory: ./app
       run: npm run build
 
-    - name: Build unit tests
-      working-directory: ./app
-      run: npm test
-
     - name: Archive artifacts
       uses: actions/upload-artifact@v2
       with:
         name: app
         path: ./app/dist/app
+
+    - name: Run tests
+      working-directory: ./app
+      run: npm test
 
