@@ -9,25 +9,7 @@ on:
   pull_request:
     branches: [ '**', '!ga-ignore-**' ]
 
-defaults:
-  run:
-    working-directory: ./app
-
 jobs:
-<<<<<<< Updated upstream
-  install:
-    name: install
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm ci
-
-=======
->>>>>>> Stashed changes
   build:
     runs-on: ubuntu-latest
 
