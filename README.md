@@ -24,7 +24,7 @@ http://localhost:80
 Install depedencies:
 ```
 cd ./app
-npm intall
+npm install
 ```
 
 Launch application:
@@ -39,6 +39,7 @@ http://localhost:4200
 
 Launch database
 ```
+cd ./database
 npm start
 ```
 
