@@ -11,6 +11,7 @@ on:
 
 jobs:
   build:
+    name: Angular
     runs-on: ubuntu-latest
 
     steps:
@@ -29,6 +30,10 @@ jobs:
     - name: Build Angular app
       working-directory: ./app
       run: npm run build
+
+    - name: Build unit tests
+      working-directory: ./app
+      run: npm test
 
     - name: Archive artifacts
       uses: actions/upload-artifact@v2
