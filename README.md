@@ -41,3 +41,6 @@ Launch database
 ```
 npm start
 ```
+
+Access to database:
+http://localhost:3000
