@@ -37,9 +37,14 @@ http://localhost:4200
 
 ## Database (Node TS)
 
+Install depedencies:
+```
+cd ./app
+npm install
+```
+
 Launch database
 ```
-cd ./database
 npm start
 ```
 
