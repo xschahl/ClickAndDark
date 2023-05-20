@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login.component';
+import { ShopComponent } from './shop/shop.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -15,6 +16,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AccessDarkComponent } from './access-dark/access-dark.component';
 
@@ -23,7 +25,8 @@ import { AccessDarkComponent } from './access-dark/access-dark.component';
     AppComponent,
     LoginComponent,
     PageNotFoundComponent,
-    AccessDarkComponent
+    AccessDarkComponent,
+    ShopComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,8 @@ import { AccessDarkComponent } from './access-dark/access-dark.component';
     MatButtonModule,
     MatIconModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
