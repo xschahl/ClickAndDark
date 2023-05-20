@@ -1,5 +1,19 @@
+.shop-page {
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgb(26, 26, 26);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
 .bg-color{
-    background: #2f2f2f;
+    background: #eeeeee;
     padding: 60px 0;
     font-family: 'Roboto', sans-serif;
 }
@@ -18,7 +32,7 @@
     content: '';
     width: 200px;
     height: 3px;
-    background: #2f2f2f;
+    background: #dbdbdb;
     opacity: .6;
     position: absolute;
     bottom: 15%;
@@ -29,7 +43,7 @@
 .title::after{
     content: '\f005';
     font-family: Font Awesome;
-    color: #2f2f2f;
+    color: #dbdbdb;
     width: 50px;
     height: 20px;
     text-align: center;
@@ -37,7 +51,7 @@
     position: absolute;
     bottom: 10%;
     left: 50%;
-    background: #2f2f2f;
+    background: #eee;
     transform: translateX(-50%);
     font-size: 16px;
     opacity: 0;
@@ -50,7 +64,7 @@
 }
 .title h1{
     font-size: 44px;
-    color: #131313;
+    color: white;
     font-weight: 900;
     text-transform: uppercase;
 }
@@ -68,7 +82,7 @@
     position: relative;
     background: #fa0;
     font-weight: 700;
-    color: #2f2f2f;
+    color: #fff;
     text-align: center;
     display: block;
     text-transform: uppercase;
@@ -97,7 +111,7 @@
     text-transform: uppercase;
     z-index: 2;
     line-height: 100%;
-    color: #2f2f2f;
+    color: #fff;
     border-radius: 3px;
     padding: 5px 8px;
 }
@@ -111,7 +125,7 @@
 }
 .cart-line{
     height: 2px;
-    background: #2f2f2f;
+    background: #f1f1f1
  }
 .cart-item{
     text-align: center;
@@ -145,7 +159,7 @@
 }
 .cart-item ul li a{
     padding: 0 18px;
-    color: #2f2f2f;
+    color: #ccc;
 }
 .cart-item ul li a:hover{
     color: #fa0;
@@ -164,7 +178,7 @@
     opacity: 0;
 }
 .p{
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(233, 233, 233);
     border-radius: 2px;
     height: 40px;
     width: 40px;
@@ -220,4 +234,54 @@
     color: #888;
     font-style: italic;
     font-weight: 400;
+}
+
+.top-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.logout-button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #fa0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+.logout-button:hover {
+    background-color: rgb(255, 192, 66);
+}
+
+.logout-button:focus {
+    outline: none;
+}
+
+.logout-button:active {
+    background-color: #b71c1c;
+}
+
+.logout-button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #f44336;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background-color: #d32f2f;
+}
+
+.logout-button:focus {
+    outline: none;
+}
+
+.logout-button:active {
+    background-color: #b71c1c;
 }
