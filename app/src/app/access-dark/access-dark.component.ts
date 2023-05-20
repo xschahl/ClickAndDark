@@ -17,4 +17,8 @@ export class AccessDarkComponent {
     if (this.solution.value == this.key)
       this.router.navigate(['/dark-web']);
   }
+
+  shop() {
+    this.router.navigate(['/shop']);
+  }
 }
