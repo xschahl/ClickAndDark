@@ -63,3 +63,6 @@ Launch application:
 cd ./database
 docker-compose up
 ```
+
+Access to phpMyAdmin:
+http://localhost:8077
