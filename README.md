@@ -50,3 +50,16 @@ npm start
 
 Access to database:
 http://localhost:3000
+
+## Docker phpMyAdmin
+
+Install phpMyAdmin:
+```
+sudo docker pull phpmyadmin/phpmyadmin
+```
+
+Launch application:
+```
+cd ./database
+docker-compose up
+```
