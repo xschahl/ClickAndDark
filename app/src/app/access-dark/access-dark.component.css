@@ -67,3 +67,31 @@
     margin: 150px auto;
     display: block;
 }
+
+.top-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.shop-button {
+    padding: 8px 16px;
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+.shop-button:hover {
+    background-color: rgb(160, 148, 148);
+}
+
+.shop-button:focus {
+    outline: none;
+}
+
+.shop-button:active {
+    background-color: #b71c1c;
+}
