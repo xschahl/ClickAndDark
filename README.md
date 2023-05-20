@@ -29,7 +29,7 @@ npm install
 
 Launch application:
 ```
-ng serve
+ng serve --open
 ```
 
 Access to angular application:
