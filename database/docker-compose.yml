@@ -1,0 +1,9 @@
+version: 'latest'
+services:
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    ports:
+      - '8077:80'
+    environment:
+      - PMA_ARBITRARY=1

@@ -29,7 +29,7 @@ npm install
 
 Launch application:
 ```
-ng serve
+ng serve --open
 ```
 
 Access to angular application:
@@ -50,3 +50,19 @@ npm start
 
 Access to database:
 http://localhost:3000
+
+## Docker phpMyAdmin
+
+Install phpMyAdmin:
+```
+sudo docker pull phpmyadmin/phpmyadmin
+```
+
+Launch application:
+```
+cd ./database
+docker-compose up
+```
+
+Access to phpMyAdmin:
+http://localhost:8077
