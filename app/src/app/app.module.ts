@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login.component';
 import { ShopComponent } from './shop/shop.component';
+import { HttpClientModule } from '@angular/common/http';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -26,7 +27,7 @@ import { AccessDarkComponent } from './access-dark/access-dark.component';
     LoginComponent,
     PageNotFoundComponent,
     AccessDarkComponent,
-    ShopComponent
+    ShopComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,6 +42,7 @@ import { AccessDarkComponent } from './access-dark/access-dark.component';
     MatIconModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     NgbModule
   ],
   providers: [],

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-shop',
@@ -23,8 +24,15 @@ export class ShopComponent implements OnInit {
     this.url4 = event.target.src;
   }
 
+  constructor(private router: Router) { }
 
-  constructor() { }
+  logout() {
+    this.router.navigate(['/login']);
+  }
+
+  darkMode() {
+    this.router.navigate(['/access-dark']);
+  }
 
   ngOnInit(): void {
   }

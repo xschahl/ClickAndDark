@@ -222,3 +222,76 @@
     font-style: italic;
     font-weight: 400;
 }
+
+.top-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.logout-button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #fa0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+.logout-button:hover {
+    background-color: rgb(255, 192, 66);
+}
+
+.logout-button:focus {
+    outline: none;
+}
+
+.logout-button:active {
+    background-color: #b71c1c;
+}
+
+.dark-mode-button {
+    padding: 8px 16px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.dark-mode-button:hover {
+    background-color: gray;
+}
+
+.dark-mode-button:focus {
+    outline: none;
+}
+
+.dark-mode-button:active {
+    background-color: black;
+}
+
+.logout-button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #f44336;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background-color: #d32f2f;
+}
+
+.logout-button:focus {
+    outline: none;
+}
+
+.logout-button:active {
+    background-color: #b71c1c;
+}
