@@ -20,7 +20,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AccessDarkComponent } from './access-dark/access-dark.component';
-import { ShopDarkComponent } from './shop-dark/shop-dark.component';
+import { DarkShopComponent } from './dark-shop/dark-shop.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +29,7 @@ import { ShopDarkComponent } from './shop-dark/shop-dark.component';
     PageNotFoundComponent,
     AccessDarkComponent,
     ShopComponent,
-    ShopDarkComponent
+    DarkShopComponent
   ],
   imports: [
     BrowserModule,

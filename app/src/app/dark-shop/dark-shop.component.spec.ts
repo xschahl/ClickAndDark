@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ShopDarkComponent } from './shop-dark.component';
+import { DarkShopComponent } from './dark-shop.component';
 
-describe('ShopDarkComponent', () => {
-  let component: ShopDarkComponent;
-  let fixture: ComponentFixture<ShopDarkComponent>;
+describe('DarkShopComponent', () => {
+  let component: DarkShopComponent;
+  let fixture: ComponentFixture<DarkShopComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ShopDarkComponent ]
+      declarations: [ DarkShopComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ShopDarkComponent);
+    fixture = TestBed.createComponent(DarkShopComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
