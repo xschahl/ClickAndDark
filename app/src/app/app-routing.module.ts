@@ -3,11 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { ShopComponent } from './shop/shop.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AccessDarkComponent } from './access-dark/access-dark.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
-  // { path: '**', pathMatch: 'full', component: PagenotfoundComponent },
+  { path: 'access-dark', component: AccessDarkComponent },
   { path: 'shop', component: ShopComponent },
   { path: '**', pathMatch: 'full', component: PageNotFoundComponent },
 ];

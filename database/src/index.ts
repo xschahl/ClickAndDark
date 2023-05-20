@@ -7,10 +7,11 @@ const port = 3000;
 
 // Create a MySQL connection pool
 const pool = mysql.createPool({
-  host: 'localhost',
-  user: 'root@tagrands.com',
-  password: 'pute',
+  host: '127.0.0.1',
+  user: 'root',
+  password: 'password',
   database: 'dtbs',
+  port: 3306
 });
 
 app.use(express.json()); // Parse JSON request bodies
@@ -78,10 +79,12 @@ app.post('/login', async (req, res) => {
 });
 
 app.post('/register', async (req, res) => {
-  const { email, password } = req.body;
+  let username: string = req.query.username || req.body.username;
+  let password: string = req.query.password || req.body.password;
+  let email: string = req.query.email || req.body.email;
 
   try {
-    // Get a connection from the pool
+    // Get a connection
     const connection = await pool.getConnection();
 
     // Check if the email already exists
@@ -96,8 +99,8 @@ app.post('/register', async (req, res) => {
     const hashedPassword = await bcrypt.hash(password, 10);
 
     // Insert the user credentials into the database
-    const insertQuery = 'INSERT INTO user (email, password) VALUES (?, ?)';
-    await connection.query(insertQuery, [email, hashedPassword]);
+    const insertQuery = 'INSERT INTO user (username, email, password) VALUES (?, ?, ?)';
+    await connection.query(insertQuery, [username, email, hashedPassword]);
 
     // Registration successful
     res.status(201).json({ message: 'Registration successful' });

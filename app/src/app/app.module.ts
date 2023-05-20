@@ -18,13 +18,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AccessDarkComponent } from './access-dark/access-dark.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    ShopComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    AccessDarkComponent,
+    ShopComponent
   ],
   imports: [
     BrowserModule,
