@@ -1,6 +1,7 @@
 import express from 'express';
 import mysql from 'mysql2/promise';
 import bcrypt from 'bcryptjs';
+import cors from 'cors';
 
 const app = express();
 const port = 3000;
@@ -13,6 +14,11 @@ const pool = mysql.createPool({
   database: 'dtbs',
   port: 3306
 });
+
+// Enable CORS for a specific origin
+app.use(cors({
+  origin: 'http://localhost:4200'
+}));
 
 app.use(express.json()); // Parse JSON request bodies
 
@@ -41,7 +47,8 @@ app.get('/users', async (req, res) => {
 });
 
 app.post('/login', async (req, res) => {
-  const { email, password } = req.body;
+  let password: string = req.query.password || req.body.password;
+  let email: string = req.query.email || req.body.email;
 
   try {
     // Get a connection from the pool

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
+import { HttpService } from '../http/http.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -12,17 +14,19 @@ export class LoginComponent {
   public password: FormControl = new FormControl('', [Validators.required]);
   public repassword: FormControl = new FormControl('', [Validators.required]);
 
-  constructor() {}
+  constructor(private http: HttpService, private router: Router) {}
 
   signIn() {
-    console.log("Email: ", this.email.value);
-    console.log("Password: ", this.password.value);
+    this.http.login(this.email.value, this.password.value).subscribe(
+      () => this.router.navigate(['/shop']),
+      error => console.log(error)
+    )
   }
 
   signUp() {
-    console.log("Username: ", this.username.value);
-    console.log("Email: ", this.email.value);
-    console.log("Password: ", this.password.value);
-    console.log("Repassword ", this.repassword.value);
+    this.http.register(this.username.value, this.email.value, this.password.value).subscribe(
+      () => this.router.navigate(['/shop']),
+      error => console.log(error)
+    )
   }
 }
