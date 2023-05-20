@@ -1,0 +1,15 @@
+<div class="access-dark-page">
+    <div class="challenge-container">
+        <h1 class="challenge-title">Access to Dark Power</h1>
+        <p class="challenge-description">Try to hack the website and get a password hidden in the site. If you find the password we will give you access to our dark web which will take you to the dark side of the force. May the force be with you !</p>
+        <form class="challenge-form" (ngSubmit)="onSubmit()">
+        <label for="solutionInput" class="challenge-label">Answer:</label>
+        <input type="text" id="solutionInput" class="challenge-input" [formControl]="solution" name="solution" required>
+            <mat-error *ngIf="solution.value != key">
+                Password is invalid: the ascii table is your friend
+            </mat-error>
+        <button type="submit" class="challenge-submit-button">Submit</button>
+        </form>
+    </div>
+    <img src="../../assets/challenge-image.jpg" alt="Challenge Image" class="challenge-image">
+</div>
