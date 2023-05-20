@@ -15,7 +15,7 @@ export class AccessDarkComponent {
 
   onSubmit() {
     if (this.solution.value == this.key)
-      this.router.navigate(['/dark-web']);
+      this.router.navigate(['/dark-shop']);
   }
 
   shop() {
